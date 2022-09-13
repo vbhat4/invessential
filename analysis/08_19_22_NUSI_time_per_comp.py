@@ -59,7 +59,7 @@ for ticker in tickers:
 #---
 #for the january to july period
 #plot data and set colors
-fig = px.line(janjul, x = "date", y = list(janjul.columns)[1:], template = "simple_white", render_mode = "svg", title = "Performance of NUSI and Peers in the First Half of 2022 and July/August", color_discrete_map = {"NUSI" : "rgba(38, 70, 83, 0.5)", "NDX" : "rgba(42, 157, 143, 0.5)", "QYLD" : "rgba(233, 196, 106, 0.5)", "QRMI" : "rgba(244, 162, 97, 0.5)", "QCLR" : "rgba(231, 111, 81, 0.5)", "JEPI" : "rgba(58, 134, 255, 0.5)", "FTHI" : "rgba(187, 77, 0, 0.5)", "PBP" : "rgba(72, 86, 150, 0.5)"}, width = 754, height = 393)
+fig = px.line(janjul, x = "date", y = list(janjul.columns)[1:], template = "simple_white", render_mode = "svg", title = "Performance of NUSI Versus Peers in the First Half of 2022 and July-August", color_discrete_map = {"NUSI" : "rgba(38, 70, 83, 0.5)", "NDX" : "rgba(42, 157, 143, 0.5)", "QYLD" : "rgba(233, 196, 106, 0.5)", "QRMI" : "rgba(244, 162, 97, 0.5)", "QCLR" : "rgba(231, 111, 81, 0.5)", "JEPI" : "rgba(58, 134, 255, 0.5)", "FTHI" : "rgba(187, 77, 0, 0.5)", "PBP" : "rgba(72, 86, 150, 0.5)"}, width = 754, height = 393)
 #remove weekends and trading holiday gaps
 fig.update_xaxes(rangebreaks = [dict(bounds = ["sat", "mon"]), dict(values = ["2022-01-17", "2022-02-21", "2022-04-15", "2022-05-30", "2022-06-20", "2022-07-04"])])
 #format title
