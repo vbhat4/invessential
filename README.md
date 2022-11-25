@@ -1,2 +1,2 @@
 # Invessential
-GitHub repository for the Invessential blog @ invessential.com/blog
+GitHub repository for the Invessential blog @ https://invessential.com/blog
